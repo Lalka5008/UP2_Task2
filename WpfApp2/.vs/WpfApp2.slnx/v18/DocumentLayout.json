@@ -1,0 +1,212 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|d:\\\u0437\u0430\u0434\u0430\u043D\u0438\u044F\\wpfapp2\\wpfapp2\\createbidwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\createbidwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|d:\\\u0437\u0430\u0434\u0430\u043D\u0438\u044F\\wpfapp2\\wpfapp2\\biddetailwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\biddetailwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|d:\\\u0437\u0430\u0434\u0430\u043D\u0438\u044F\\wpfapp2\\wpfapp2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|d:\\\u0437\u0430\u0434\u0430\u043D\u0438\u044F\\wpfapp2\\wpfapp2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|d:\\\u0437\u0430\u0434\u0430\u043D\u0438\u044F\\wpfapp2\\wpfapp2\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|d:\\\u0437\u0430\u0434\u0430\u043D\u0438\u044F\\wpfapp2\\wpfapp2\\createbidwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\createbidwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|d:\\\u0437\u0430\u0434\u0430\u043D\u0438\u044F\\wpfapp2\\wpfapp2\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|d:\\\u0437\u0430\u0434\u0430\u043D\u0438\u044F\\wpfapp2\\wpfapp2\\biddetailwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\biddetailwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|d:\\\u0437\u0430\u0434\u0430\u043D\u0438\u044F\\wpfapp2\\wpfapp2\\data\\task4context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\data\\task4context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|d:\\\u0437\u0430\u0434\u0430\u043D\u0438\u044F\\wpfapp2\\wpfapp2\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|d:\\\u0437\u0430\u0434\u0430\u043D\u0438\u044F\\wpfapp2\\wpfapp2\\models\\\u0441ourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\models\\\u0441ourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|d:\\\u0437\u0430\u0434\u0430\u043D\u0438\u044F\\wpfapp2\\wpfapp2\\data\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A5BE75B-F2D1-534A-3AEE-35992022E4D5}|WpfApp2\\WpfApp2.csproj|solutionrelative:wpfapp2\\data\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 314,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp2\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T13:05:16.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateBidWindow.xaml.cs",
+              "DocumentMoniker": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\CreateBidWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\CreateBidWindow.xaml.cs",
+              "ToolTip": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\CreateBidWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp2\\CreateBidWindow.xaml.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAApwHoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T13:31:08.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\LoginWindow.xaml.cs",
+              "ToolTip": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp2\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T13:13:48.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateBidWindow.xaml",
+              "DocumentMoniker": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\CreateBidWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp2\\CreateBidWindow.xaml",
+              "ToolTip": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\CreateBidWindow.xaml",
+              "RelativeToolTip": "WpfApp2\\CreateBidWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-05T13:21:12.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp2\\MainWindow.xaml",
+              "ToolTip": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\MainWindow.xaml",
+              "RelativeToolTip": "WpfApp2\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-05T13:05:18.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BidDetailWindow.xaml",
+              "DocumentMoniker": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\BidDetailWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp2\\BidDetailWindow.xaml",
+              "ToolTip": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\BidDetailWindow.xaml",
+              "RelativeToolTip": "WpfApp2\\BidDetailWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-05T13:21:28.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp2\\LoginWindow.xaml",
+              "ToolTip": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\LoginWindow.xaml",
+              "RelativeToolTip": "WpfApp2\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-05T13:13:33.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BidDetailWindow.xaml.cs",
+              "DocumentMoniker": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\BidDetailWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\BidDetailWindow.xaml.cs",
+              "ToolTip": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\BidDetailWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp2\\BidDetailWindow.xaml.cs",
+              "ViewState": "AgIAALYAAAAAAAAAAADgv94AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T13:24:10.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Task4Context.cs",
+              "DocumentMoniker": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\Data\\Task4Context.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\Data\\Task4Context.cs",
+              "ToolTip": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\Data\\Task4Context.cs",
+              "RelativeToolTip": "WpfApp2\\Data\\Task4Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T13:08:58.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\App.xaml",
+              "RelativeDocumentMoniker": "WpfApp2\\App.xaml",
+              "ToolTip": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\App.xaml",
+              "RelativeToolTip": "WpfApp2\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-05T13:13:35.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "\u0421ourse.cs",
+              "DocumentMoniker": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\Models\\\u0421ourse.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\Models\\\u0421ourse.cs",
+              "ToolTip": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\Models\\\u0421ourse.cs",
+              "RelativeToolTip": "WpfApp2\\Models\\\u0421ourse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T13:11:02.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\Data\\AuthService.cs",
+              "RelativeDocumentMoniker": "WpfApp2\\Data\\AuthService.cs",
+              "ToolTip": "D:\\\u0417\u0430\u0434\u0430\u043D\u0438\u044F\\WpfApp2\\WpfApp2\\Data\\AuthService.cs",
+              "RelativeToolTip": "WpfApp2\\Data\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T13:10:07.603Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

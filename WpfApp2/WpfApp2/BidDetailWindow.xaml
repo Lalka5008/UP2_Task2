@@ -1,0 +1,155 @@
+﻿<Window x:Class="WpfApp2.BidDetailWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Детали заявки" Height="792" Width="650">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Grid.Row="0" Text="Детали заявки" FontSize="20" FontWeight="Bold" 
+                   Margin="0,0,0,15" HorizontalAlignment="Left"/>
+
+        <!-- Основной контент -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Информация о заявке -->
+                <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+                           Text="Информация о заявке" FontWeight="SemiBold" FontSize="14" 
+                           Margin="0,0,0,10"/>
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Номер заявки:" Foreground="#666" Margin="0,5" VerticalAlignment="Center"/>
+                <TextBlock x:Name="txtBidId" Grid.Row="1" Grid.Column="1" Margin="5,5" VerticalAlignment="Center"/>
+
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="Дата заявки:" Foreground="#666" Margin="0,5" VerticalAlignment="Center"/>
+                <TextBlock x:Name="txtBidDate" Grid.Row="2" Grid.Column="1" Margin="5,5" VerticalAlignment="Center"/>
+
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="Статус заявки:" Foreground="#666" Margin="0,5" VerticalAlignment="Center"/>
+                <ComboBox x:Name="StatusComboBox" Grid.Row="3" Grid.Column="1" Margin="5,3" 
+                          DisplayMemberPath="BidStatusName" SelectedValuePath="BidStatusId"
+                          SelectionChanged="StatusComboBox_SelectionChanged" Padding="5"/>
+
+                <!-- Разделитель -->
+                <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" 
+                        BorderBrush="#E0E0E0" BorderThickness="0,0,0,1" Margin="0,15,0,15"/>
+
+                <!-- Информация о клиенте -->
+                <TextBlock Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" 
+                           Text="Информация о клиенте" FontWeight="SemiBold" FontSize="14" 
+                           Margin="0,0,0,10"/>
+
+                <TextBlock Grid.Row="6" Grid.Column="0" Text="ФИО клиента:" Foreground="#666" Margin="0,5" VerticalAlignment="Center"/>
+                <TextBlock x:Name="txtUserName" Grid.Row="6" Grid.Column="1" Margin="5,5" VerticalAlignment="Center"/>
+
+                <TextBlock Grid.Row="7" Grid.Column="0" Text="Email клиента:" Foreground="#666" Margin="0,5" VerticalAlignment="Center"/>
+                <TextBlock x:Name="txtUserEmail" Grid.Row="7" Grid.Column="1" Margin="5,5" VerticalAlignment="Center"/>
+
+                <TextBlock Grid.Row="8" Grid.Column="0" Text="Компания:" Foreground="#666" Margin="0,5" VerticalAlignment="Center"/>
+                <ComboBox x:Name="cbCompany" Grid.Row="8" Grid.Column="1" Margin="5,3" 
+                          DisplayMemberPath="CompanyName" Padding="5"/>
+
+                <!-- Разделитель -->
+                <Border Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" 
+                        BorderBrush="#E0E0E0" BorderThickness="0,0,0,1" Margin="0,15,0,15"/>
+
+                <!-- Информация о курсе -->
+                <TextBlock Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2" 
+                           Text="Информация о курсе" FontWeight="SemiBold" FontSize="14" 
+                           Margin="0,0,0,10"/>
+
+                <TextBlock Grid.Row="11" Grid.Column="0" Text="Курс:" Foreground="#666" Margin="0,5" VerticalAlignment="Center"/>
+                <ComboBox x:Name="cbCourse" Grid.Row="11" Grid.Column="1" Margin="5,3" 
+                          DisplayMemberPath="СourseName" SelectionChanged="Course_Changed" Padding="5"/>
+
+                <TextBlock Grid.Row="12" Grid.Column="0" Text="Направление:" Foreground="#666" Margin="0,5" VerticalAlignment="Center"/>
+                <ComboBox x:Name="cbDirection" Grid.Row="12" Grid.Column="1" Margin="5,3" 
+                          DisplayMemberPath="DirectionName" Padding="5"/>
+
+                <TextBlock Grid.Row="13" Grid.Column="0" Text="Преподаватель:" Foreground="#666" Margin="0,5" VerticalAlignment="Center"/>
+                <ComboBox x:Name="cbTeacher" Grid.Row="13" Grid.Column="1" Margin="5,3" 
+                          DisplayMemberPath="TeacherType" Padding="5"/>
+
+                <TextBlock Grid.Row="14" Grid.Column="0" Text="Дата начала:" Foreground="#666" Margin="0,5" VerticalAlignment="Center"/>
+                <TextBlock x:Name="txtStartDate" Grid.Row="14" Grid.Column="1" Margin="5,5" VerticalAlignment="Center"/>
+
+                <TextBlock Grid.Row="15" Grid.Column="0" Text="Продолжительность:" Foreground="#666" Margin="0,5" VerticalAlignment="Center"/>
+                <TextBlock x:Name="txtDuration" Grid.Row="15" Grid.Column="1" Margin="5,5" VerticalAlignment="Center"/>
+
+                <!-- Разделитель -->
+                <Border Grid.Row="16" Grid.Column="0" Grid.ColumnSpan="2" 
+                        BorderBrush="#E0E0E0" BorderThickness="0,0,0,1" Margin="0,15,0,15"/>
+
+                <!-- Стоимость и места -->
+                <TextBlock Grid.Row="17" Grid.Column="0" Grid.ColumnSpan="2" 
+                           Text="Стоимость и места" FontWeight="SemiBold" FontSize="14" 
+                           Margin="0,0,0,10"/>
+
+                <TextBlock Grid.Row="18" Grid.Column="0" Text="Цена за место:" Foreground="#666" Margin="0,5" VerticalAlignment="Center"/>
+                <TextBlock x:Name="txtPrice" Grid.Row="18" Grid.Column="1" Margin="5,5" VerticalAlignment="Center"/>
+
+                <TextBlock Grid.Row="19" Grid.Column="0" Text="Свободных мест:" Foreground="#666" Margin="0,5" VerticalAlignment="Center"/>
+                <TextBlock x:Name="txtFreeSeats" Grid.Row="19" Grid.Column="1" Margin="5,5" VerticalAlignment="Center"/>
+
+                <TextBlock Grid.Row="20" Grid.Column="0" Text="Количество мест:" Foreground="#666" Margin="0,5" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtSeats" Grid.Row="20" Grid.Column="1" Margin="5,3" Width="80" 
+                         TextChanged="Seats_TextChanged" Padding="5" HorizontalAlignment="Left"/>
+
+                <TextBlock Grid.Row="21" Grid.Column="0" Text="Общая стоимость:" Foreground="#666" Margin="0,5" VerticalAlignment="Center"/>
+                <TextBlock x:Name="txtTotalPrice" Grid.Row="21" Grid.Column="1" Margin="5,5" VerticalAlignment="Center" 
+                           FontWeight="Bold" Foreground="#2E7D32" FontSize="16"/>
+
+                <!-- Разделитель -->
+                <Border Grid.Row="22" Grid.Column="0" Grid.ColumnSpan="2" 
+                        BorderBrush="#E0E0E0" BorderThickness="0,0,0,1" Margin="0,15,0,15"/>
+
+                <!-- Комментарий -->
+                <TextBlock Grid.Row="23" Grid.Column="0" Grid.ColumnSpan="2" 
+                           Text="Комментарий" FontWeight="SemiBold" FontSize="14" 
+                           Margin="0,0,0,5"/>
+
+                <TextBox x:Name="txtComment" Grid.Row="24" Grid.Column="0" Grid.ColumnSpan="2" 
+                         Margin="0,0,0,10" Height="80" 
+                         TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"
+                         Padding="8"/>
+            </Grid>
+        </ScrollViewer>
+
+        <!-- Кнопка сохранения -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,15,0,0">
+            <Button Content="Сохранить изменения" Click="Save_Click" 
+                    Margin="5" Padding="20,8" MinWidth="120"
+                    Background="#2196F3" Foreground="White" BorderThickness="0" />
+        </StackPanel>
+    </Grid>
+</Window>

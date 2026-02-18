@@ -1,0 +1,125 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Меню" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Курсы">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                    <ItemsControl x:Name="CoursesItemsControl" ItemsSource="{Binding Courses}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border BorderBrush="LightGray" BorderThickness="1" Margin="10" Padding="10" CornerRadius="5" Background="White" Width="700">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+
+                                        <!-- Фото слева (занимает все строки) -->
+                                        <Image Grid.Row="0" Grid.RowSpan="4" Grid.Column="0"
+               Source="{Binding ImageFullPath}"
+               Width="80" Height="80"
+               Stretch="UniformToFill"
+               Margin="0,0,10,0"/>
+
+                                        <!-- Левая колонка с деталями -->
+                                        <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding СourseName}" FontWeight="Bold" FontSize="14"/>
+                                        <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Direction.DirectionName}" FontStyle="Italic"/>
+                                        <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Long, StringFormat=Длительность: {0} ч.}"/>
+                                        <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding StartDate, StringFormat=Дата начала: {0:dd.MM.yyyy}}" FontStyle="Italic"/>
+
+                                        <!-- Правая колонка с информацией -->
+                                        <TextBlock Grid.Row="0" Grid.Column="2" Text="{Binding Price, StringFormat=Стоимость: {0:#.0}₽}" FontWeight="Bold"/>
+                                        <TextBlock Grid.Row="3" Grid.Column="2" Text="{Binding Free, StringFormat=Кол-во свободных мест: {0}}" HorizontalAlignment="Right"/>
+
+
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem x:Name="BidsTab" Header="Заявки">
+                <Grid Margin="15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Строка поиска -->
+                    <Border Grid.Row="0" BorderBrush="#E0E0E0" BorderThickness="0,0,0,1" Padding="0,0,0,12" Margin="0,0,0,12">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text=" Поиск по ФИО:" VerticalAlignment="Center" FontWeight="SemiBold" Margin="0,0,10,0"/>
+                            <TextBox x:Name="SearchBox" Grid.Column="1" Padding="8" TextChanged="SearchBox_TextChanged"/>
+                            <Button Grid.Column="2" Content="Сбросить" Margin="10,0,0,0" Padding="12,6" Click="Button_Click"/>
+                        </Grid>
+                    </Border>
+
+                    <!-- Панель фильтров и кнопок -->
+                    <WrapPanel Grid.Row="1" Margin="0,0,0,15" VerticalAlignment="Center">
+                        <!-- Статус -->
+                        <TextBlock Text="Статус:" VerticalAlignment="Center" Margin="0,0,5,0" FontWeight="SemiBold"/>
+                        <ComboBox x:Name="StatusComboBox" Margin="0,0,15,0" Padding="6,5" MinWidth="140"
+                      ItemsSource="{Binding BidsStatus}"
+                      DisplayMemberPath="BidStatusName"
+                      SelectedValuePath="BidStatusId"
+                      SelectionChanged="StatusComboBox_SelectionChanged"/>
+
+                        <!-- Сортировка -->
+                        <TextBlock Text="Сортировка:" VerticalAlignment="Center" Margin="0,0,5,0" FontWeight="SemiBold"/>
+                        <ComboBox x:Name="SortComboBox" Padding="6,5" Width="150" Margin="0,0,15,0"
+                      SelectionChanged="SortComboBox_SelectionChanged">
+                            <ComboBoxItem Content="📅 Сначала новые" Tag="desc"/>
+                            <ComboBoxItem Content="📅 Сначала старые" Tag="asc"/>
+                            <ComboBoxItem Content="🚫 Без сортировки" Tag="none"/>
+                        </ComboBox>
+
+                        <!-- Кнопки -->
+                        <Button x:Name="UpdateButton" Content="Обновить" Margin="0,0,10,0" Padding="15,6" Click="UpdateButton_Click" Background="#FF3BF746"/>
+                        <Button Content="Добавить" Padding="15,6" Click="Button_Click_2" Background="#FF47F752"/>
+                    </WrapPanel>
+
+                    <!-- Таблица -->
+                    <DataGrid x:Name="BidsDataGrid" Grid.Row="2" 
+                  CanUserSortColumns="True" 
+                  ItemsSource="{Binding Bids}" 
+                  AutoGenerateColumns="False" 
+                  IsReadOnly="True" 
+                  Margin="0,0,0,10"
+                  BorderBrush="#DDD"
+                  BorderThickness="1"
+                  RowHeight="35"
+                  AlternatingRowBackground="#F9F9F9"
+                  MouseDoubleClick="BidsDataGrid_MouseDoubleClick">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="№" Binding="{Binding BidId}" Width="60"/>
+                            <DataGridTextColumn Header="ФИО клиента" Binding="{Binding User.Name}" Width="*" MinWidth="180"/>
+                            <DataGridTextColumn Header="Название курса" Binding="{Binding Сourse.СourseName}" Width="*" MinWidth="180"/>
+                            <DataGridTextColumn Header="Дата бронирования" Binding="{Binding BidData, StringFormat={}{0:dd.MM.yyyy}}" Width="130" SortMemberPath="BidData"/>
+                            <DataGridTextColumn Header="Статус" Binding="{Binding BidStatus.BidStatusName}" Width="110"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
